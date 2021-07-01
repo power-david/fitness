@@ -15,7 +15,7 @@ import {
   NavbarText
 } from 'reactstrap';
 
-const MainNav = (props) => {
+const MainNavbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -31,14 +31,14 @@ const MainNav = (props) => {
               <NavLink href="/components/">Login</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Activities</NavLink>
+              <NavLink href="/activities/">Activities</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Routines</NavLink>
+              <NavLink href="/routines/">Routines</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Routine Options
+                Select Workouts
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
@@ -60,4 +60,4 @@ const MainNav = (props) => {
   );
 }
 
-export default MainNav;
+export default MainNavbar;
